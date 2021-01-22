@@ -1,4 +1,4 @@
-import { FaTimes } from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 
 const Task = ({ task, onDelete, onToggle }) => {
   return (
@@ -8,9 +8,9 @@ const Task = ({ task, onDelete, onToggle }) => {
     >
       <div>
         Событие: {task.text}{" "}
-        <FaTimes
+        <FaTimesCircle
           style={{ color: "red", cursor: "pointer" }}
-          onClick={() => onDelete(task.id)}
+          onClick={(id) => onDelete(task.id)}
         />
       </div>
       <div>
